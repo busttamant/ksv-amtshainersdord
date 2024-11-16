@@ -131,7 +131,7 @@ export const MitgliedWerden = () => {
                                     </div>
                                     <div className="field">
                                         <div className="control">
-                                            <button className="button is-link" type='submit' value="Send">Absenden</button>
+                                            <button className="button efecto-caja" type='submit' value="Send">Absenden</button>
                                         </div>
                                     </div>
                                 </form>
