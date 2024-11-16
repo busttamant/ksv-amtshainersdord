@@ -47,8 +47,9 @@ export const NavBar = () => {
                                         <Link to="/spielplan" className={`navbar-item ${isPath("/spielplan") ? "is-active" : ""}`}>Spielplan</Link>
                                         <Link to="/sponsoren" className={`navbar-item ${isPath("/sponsoren") ? "is-active" : ""}`}>Sponsoren</Link>
                                         <Link to="/mitgliedwerden" className={`navbar-item ${isPath("/mitgliedwerden") ? "is-active" : ""}`}>Mitglied werden</Link>
-                                        <Link to="/kontakt" className={`navbar-item ${isPath("/kontakt") ? "is-active" : ""}`}>Kontakt</Link>
                                         <Link to="/vermietung" className={`navbar-item ${isPath("/vermietung") ? "is-active" : ""}`}>Vermietung</Link>
+                                        <Link to="/kontakt" className={`navbar-item ${isPath("/kontakt") ? "is-active" : ""}`}>Kontakt</Link>
+
                                         <Link to="/historie" className={`navbar-item ${isPath("/historie") ? "is-active" : ""}}`}>Historie
                                         </Link>
                                     </div>

@@ -3,6 +3,11 @@ import { } from "module"
 import '../styles/App.css'
 import { Link, useNavigate } from 'react-router-dom'
 import path from 'path';
+import KSV6 from '../assets/KSV6.jpg'
+import KSV8 from '../assets/KSV8.jpg'
+import KSV7 from '../assets/KSV7.jpg'
+import Facebok from '../assets/facebook.png'
+import Instagram from '../assets/instagram.png'
 
 export const Home = () => {
 
@@ -33,10 +38,9 @@ export const Home = () => {
                     <a className="is-block has-text-centered ">
                         <figure className="image is-1by1 mi-img mx-auto">
                             <img
-                                src="/src/assets/KSV6.jpg"
-                                alt="Ergebnisse"
+                                src={KSV6}
+                                alt="SpielPlan"
                                 onClick={() => cambiarPagina("/spielplan")}
-
                                 className="is-rounded mi-img"
                             />
                         </figure>
@@ -49,10 +53,9 @@ export const Home = () => {
                     <a className="is-block has-text-centered">
                         <figure className="image is-1by1 mi-img mx-auto">
                             <img
-                                src="/src/assets/KSV8.jpg"
+                                src={KSV8}
                                 alt="Mannschaft"
                                 onClick={() => cambiarPagina("/mannschaft")}
-
                                 className="is-rounded mi-img "
 
                             />
@@ -66,7 +69,7 @@ export const Home = () => {
                     <a className="is-block has-text-centered">
                         <figure className="image is-1by1 mi-img mx-auto">
                             <img
-                                src="/src/assets/KSV7.jpg"
+                                src={KSV7}
                                 alt="Nächste Spiele"
                                 onClick={() => cambiarPagina("/historie")}
                                 className="is-rounded mi-img"
@@ -87,12 +90,12 @@ export const Home = () => {
                     <div className="buttons is-centered">
                         <a href="https://www.facebook.com/KSVAmtshainersdorf/?locale=de_DE" target="_blank" rel="noopener noreferrer">
                             <figure className="image mx-auto efecto">
-                                <img src="/src/assets/facebook.png" />
+                                <img src={Facebok} />
                             </figure>
                         </a>
                         <a href=" https://www.instagram.com/ksv_amtshainersdorf/" target="_blank" rel="noopener noreferrer">
                             <figure className="image mx-auto efecto">
-                                <img src="/src/assets/instagram.png" />
+                                <img src={Instagram} />
                             </figure>
                         </a>
                     </div>

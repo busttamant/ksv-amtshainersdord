@@ -1,7 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { NavBar } from './components/NavBar'
-import { Prueba } from './pages/Prueba'
 import { Home } from "./pages/Home";
 import { Footer } from './components/Footer';
 import { Mannschaft } from './pages/Mannschaft';
