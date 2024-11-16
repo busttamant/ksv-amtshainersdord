@@ -1,5 +1,6 @@
 import { div } from 'framer-motion/client'
 import React from 'react'
+import HistorieFoto from '../assets/historie.jpg'
 
 export const Historie = () => {
     return (
@@ -11,7 +12,7 @@ export const Historie = () => {
                     <div className="column is-half">
                         <figure className="image is-4by3">
                             <img
-                                src="/src/assets/historie.jpg"
+                                src={HistorieFoto}
                                 alt="Equipo en 1950"
                                 className="has-ratio"
                                 style={{ objectFit: "fill" }}
