@@ -1,0 +1,172 @@
+/* ======== Configuración Global ======== */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ======== Estilo para Fondo ======== */
+.background {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url(/src/assets/Home.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ======== Tipografía ======== */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+}
+
+/* ======== Navbar ======== */
+.center-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar-sticky {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* ======== Links y Botones ======== */
+.navbar-link,
+a.navbar-item {
+    color: white;
+    transition: background 0.35s, color 0.35s;
+}
+
+.navbar-link,
+a.navbar-item:focus {
+    background: rgba(255, 115, 0, 0.979) !important;
+    color: black;
+}
+
+/* ======== Botones ======== */
+.button {
+    z-index: 10;
+}
+
+/* ======== Estilo de Imágenes ======== */
+.mi-img {
+    object-fit: cover;
+    height: 256px;
+    width: 256px;
+    transition: transform 0.2s ease-out;
+}
+
+.mi-img:hover {
+    transform: scale(1.1);
+}
+
+.efecto {
+    height: 36px;
+    width: 36px;
+    transition: transform 0.2s ease-out;
+}
+
+.efecto:hover {
+    transform: scale(1.1);
+}
+
+/* ======== Colores y Efectos ======== */
+.naranja {
+    color: rgb(201, 130, 0);
+}
+
+.efecto-caja {
+    background: hsl(0, 0%, 7%);
+    color: white;
+    transition: background 0.35s, color 0.35s;
+}
+
+.efecto-caja:hover {
+    background: rgba(255, 115, 0, 0.979);
+    color: black;
+}
+
+.efecto-caja-naranja {
+    background: rgba(255, 115, 0, 0.979);
+    color: black;
+}
+
+.efecto-caja-naranja:hover {
+    background: hsl(0, 0%, 7%);
+    color: white;
+}
+
+.caja {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    background: hsl(0, 0%, 7%);
+}
+
+.object-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ======== Media Queries ======== */
+
+/* Ajustes para Tablets y Dispositivos Pequeños */
+@media (max-width: 1024px) {
+    .center-navbar {
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .custom-hero {
+        background-size: cover;
+        background-position: center top;
+        height: 80vh;
+    }
+
+    .background {
+        height: 20vh;
+        background-size: cover;
+    }
+
+    h2.title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    p.content {
+        font-size: 1rem;
+    }
+
+    .hero-body .content h3 {
+        font-size: 1.3rem;
+    }
+
+    .hero-body .content p {
+        font-size: 1rem;
+    }
+}
+
+/* Ajustes para Teléfonos Móviles */
+@media (max-width: 480px) {
+    h2.title {
+        font-size: 1.2rem;
+    }
+
+    p.content {
+        font-size: 0.9rem;
+    }
+}
