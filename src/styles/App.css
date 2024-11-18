@@ -122,6 +122,10 @@ a.navbar-item:focus {
 
 /* Ajustes para Tablets y Dispositivos Pequeños */
 @media (max-width: 1024px) {
+    .mi-img {
+        height: 40%;
+    }
+
     .center-navbar {
         align-items: flex-start;
         padding: 20px;
@@ -134,7 +138,7 @@ a.navbar-item:focus {
     }
 
     .background {
-        height: 20vh;
+        height: 50vh;
         background-size: cover;
     }
 

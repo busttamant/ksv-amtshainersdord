@@ -7,6 +7,7 @@ import KSV6 from '../assets/KSV6.jpg'
 import KSV8 from '../assets/KSV8.jpg'
 import KSV7 from '../assets/KSV7.jpg'
 import Facebok from '../assets/facebook.png'
+import { Analytics } from "@vercel/analytics/react"
 import Instagram from '../assets/instagram.png'
 
 export const Home = () => {
@@ -28,7 +29,7 @@ export const Home = () => {
                     <p className="title  has-text-centered is-size-3 has-text-white">Willkommen beim KSV Amtshainersdorf</p>
                     <p className="subtitle has-text-centered has-text-grey">Willkommen auf der Webseite unseres Fußballvereins! Schön, dass Sie hier sind. Entdecken Sie aktuelle News, Spieltermine und alles rund um unser Team. Viel Spaß beim Stöbern!
                     </p>
-
+                    <Analytics />
 
                 </div>
             </div>
