@@ -138,7 +138,7 @@ a.navbar-item:focus {
     }
 
     .background {
-        height: 50vh;
+        height: 40vh;
         background-size: cover;
         max-height: 50vh;
     }
