@@ -123,7 +123,7 @@ a.navbar-item:focus {
 /* Ajustes para Tablets y Dispositivos Pequeños */
 @media (max-width: 1024px) {
     .mi-img {
-        height: 40%;
+        height: 30%;
     }
 
     .center-navbar {
