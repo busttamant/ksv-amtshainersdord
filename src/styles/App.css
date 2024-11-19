@@ -118,10 +118,39 @@ a.navbar-item:focus {
     object-fit: cover;
 }
 
+.navbar-menu {
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.navbar-menu.is-active {
+    max-height: 500px;
+    /* Ajusta según la altura máxima del contenido */
+    opacity: 1;
+}
+
+/* ======== Burger Menu Animations ======== */
+.navbar-burger span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: white;
+    margin: 5px auto;
+    transition: all 0.3s ease;
+}
+
+
 /* ======== Media Queries ======== */
 
 /* Ajustes para Tablets y Dispositivos Pequeños */
 @media (max-width: 1024px) {
+    .navbar-brand {
+        transition: 0.5 ease;
+
+    }
+
     .mi-img {
         height: 30vh;
     }

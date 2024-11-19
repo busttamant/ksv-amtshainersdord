@@ -10,7 +10,7 @@ import { MitgliedWerden } from './pages/MitgliedWerden';
 import { Kontakt } from './pages/Kontakt';
 import { Vermietung } from './pages/Vermietung';
 import { Historie } from './pages/Historie';
-import { Analytics } from "@vercel/analytics/react"
+
 function App() {
   return (
     <>
