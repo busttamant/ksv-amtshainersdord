@@ -9,6 +9,7 @@ body {
 /* ======== Estilo para Fondo ======== */
 .background {
     height: 80vh;
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-image: url(/src/assets/Home.jpg);
@@ -120,9 +121,7 @@ a.navbar-item:focus {
 
 .navbar-menu {
     transition: max-height 0.3s ease, opacity 0.3s ease;
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
+
 }
 
 .navbar-menu.is-active {
@@ -146,10 +145,7 @@ a.navbar-item:focus {
 
 /* Ajustes para Tablets y Dispositivos Pequeños */
 @media (max-width: 1024px) {
-    .navbar-brand {
-        transition: 0.5 ease;
 
-    }
 
     .mi-img {
         height: 30vh;

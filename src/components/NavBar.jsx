@@ -47,15 +47,22 @@ export const NavBar = () => {
                                 </div>
                                 <div id="navbarMenuHeroB" className={`navbar-menu ${isActive ? 'is-active' : ''}`}>
                                     <div className="navbar-end">
-                                        <Link to="/" className={`navbar-item ${isPath("/") ? "is-active" : ""}`} onClick={closeNavbar}>Home</Link>
-                                        <Link to="/mannschaft" className={`navbar-item ${isPath("/mannschaft") ? "is-active" : ""}`} onClick={closeNavbar}>Mannschaft</Link>
-                                        <Link to="/spielplan" className={`navbar-item ${isPath("/spielplan") ? "is-active" : ""}`} onClick={closeNavbar}>Spielplan</Link>
-                                        <Link to="/sponsoren" className={`navbar-item ${isPath("/sponsoren") ? "is-active" : ""}`} onClick={closeNavbar}>Sponsoren</Link>
+                                        <Link to="/" className={`navbar-item ${isPath("/") ? "is-active" : ""}`}
+                                            onClick={closeNavbar}>Home</Link>
+                                        <Link to="/mannschaft" className={`navbar-item ${isPath("/mannschaft") ? "is-active" : ""}`}
+                                            onClick={closeNavbar}>Mannschaft</Link>
+                                        <Link to="/spielplan" className={`navbar-item ${isPath("/spielplan") ? "is-active" : ""}`}
+                                            onClick={closeNavbar}>Spielplan</Link>
+                                        <Link to="/sponsoren" className={`navbar-item ${isPath("/sponsoren") ? "is-active" : ""}`}
+                                            onClick={closeNavbar}>Sponsoren</Link>
                                         <Link to="/mitgliedwerden" className={`navbar-item ${isPath("/mitgliedwerden") ? "is-active" : ""}`} onClick={closeNavbar}>Mitglied werden</Link>
-                                        <Link to="/vermietung" className={`navbar-item ${isPath("/vermietung") ? "is-active" : ""}`} onClick={closeNavbar}>Vermietung</Link>
-                                        <Link to="/kontakt" className={`navbar-item ${isPath("/kontakt") ? "is-active" : ""}`} onClick={closeNavbar}>Kontakt</Link>
+                                        <Link to="/vermietung" className={`navbar-item ${isPath("/vermietung") ? "is-active" : ""}`}
+                                            onClick={closeNavbar}>Vermietung</Link>
+                                        <Link to="/kontakt" className={`navbar-item ${isPath("/kontakt") ? "is-active" : ""}`}
+                                            onClick={closeNavbar}>Kontakt</Link>
 
-                                        <Link to="/historie" className={`navbar-item ${isPath("/historie") ? "is-active" : ""}}`} onClick={closeNavbar}>Historie
+                                        <Link to="/historie" className={`navbar-item ${isPath("/historie") ? "is-active" : ""}}`}
+                                            onClick={closeNavbar}>Historie
                                         </Link>
                                     </div>
                                 </div>
