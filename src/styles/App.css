@@ -1,5 +1,8 @@
 /* ======== Configuración Global ======== */
-html,
+html {
+    background-color: #14161a
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -149,6 +152,7 @@ a.navbar-item:focus {
 
     .mi-img {
         height: 30vh;
+        transform: none;
     }
 
     .center-navbar {

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { motion } from 'framer-motion';
 
 
 export const Kontakt = () => {
@@ -30,42 +31,47 @@ export const Kontakt = () => {
 
 
     return (
-        <div className='has-background-black-bis bebas-neue-regular'>
-            <div className='container'>
-                <section className='section'>
-                    <div className="box">
-                        <h2 className="title is-4">Kontakt</h2>
-                        <p>
-                            Wenn du mehr wissen willst, schreib uns doch einfach an oder wende dich an einen unserer Ansprechpartner! Wir freuen uns auf dich!
-                        </p>
-                        <form className="mt-4" ref={form} onSubmit={sendEmail}>
-                            <div className="field">
-                                <label className="label">Name</label>
-                                <div className="control">
-                                    <input className="input" type="text" name='user_name' placeholder="Dein Name" />
+        <motion.div
+            initial={{ x: -10, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.2 }}>
+            <div className='bebas-neue-regular'>
+                <div className='container'>
+                    <section className='section'>
+                        <div className="box">
+                            <h2 className="title is-4">Kontakt</h2>
+                            <p>
+                                Wenn du mehr wissen willst, schreib uns doch einfach an oder wende dich an einen unserer Ansprechpartner! Wir freuen uns auf dich!
+                            </p>
+                            <form className="mt-4" ref={form} onSubmit={sendEmail}>
+                                <div className="field">
+                                    <label className="label">Name</label>
+                                    <div className="control">
+                                        <input className="input" type="text" name='user_name' placeholder="Dein Name" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="field">
-                                <label className="label">E-Mail</label>
-                                <div className="control">
-                                    <input className="input" type="email" name='user_email' placeholder="Deine E-Mail" />
+                                <div className="field">
+                                    <label className="label">E-Mail</label>
+                                    <div className="control">
+                                        <input className="input" type="email" name='user_email' placeholder="Deine E-Mail" />
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="field">
-                                <label className="label">Nachricht</label>
-                                <div className="control">
-                                    <textarea className="textarea" name='message' placeholder="Deine Nachricht an uns"></textarea>
+                                <div className="field">
+                                    <label className="label">Nachricht</label>
+                                    <div className="control">
+                                        <textarea className="textarea" name='message' placeholder="Deine Nachricht an uns"></textarea>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="field">
-                                <div className="control">
-                                    <button className="button is-link" type='submit' value="Send">Absenden</button>
+                                <div className="field">
+                                    <div className="control">
+                                        <button className="button is-link" type='submit' value="Send">Absenden</button>
+                                    </div>
                                 </div>
-                            </div>
-                        </form>
-                    </div>
-                </section>
+                            </form>
+                        </div>
+                    </section>
+                </div>
             </div>
-        </div>
+        </motion.div>
     )
 }

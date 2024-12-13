@@ -8,6 +8,7 @@ import KSV8 from '../assets/KSV8.jpg'
 import KSV7 from '../assets/KSV7.jpg'
 import Facebok from '../assets/facebook.png'
 import Instagram from '../assets/instagram.png'
+import { motion } from 'framer-motion';
 
 export const Home = () => {
 
@@ -22,85 +23,91 @@ export const Home = () => {
 
 
     return (
-        <section className="hero has-background-black-bis bebas-neue-regular mp-4 " >
-            <div className="hero-body">
-                <div className="container has-text-centered">
-                    <p className="title  has-text-centered is-size-3 has-text-white">Willkommen beim KSV Amtshainersdorf</p>
-                    <p className="subtitle has-text-centered has-text-grey">Willkommen auf der Webseite unseres Fußballvereins! Schön, dass Sie hier sind. Entdecken Sie aktuelle News, Spieltermine und alles rund um unser Team. Viel Spaß beim Stöbern!
-                    </p>
+        <motion.div
+            initial={{ x: -10, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.2 }}>
 
+            <section className="hero  bebas-neue-regular mp-4 " >
+                <div className="hero-body">
+                    <div className="container has-text-centered">
+                        <p className="title  has-text-centered is-size-3 has-text-white">Willkommen beim KSV Amtshainersdorf</p>
+                        <p className="subtitle has-text-centered has-text-grey">Willkommen auf der Webseite unseres Fußballvereins! Schön, dass Sie hier sind. Entdecken Sie aktuelle News, Spieltermine und alles rund um unser Team. Viel Spaß beim Stöbern!
+                        </p>
+
+                    </div>
                 </div>
-            </div>
 
-            <div className="columns is-centered mt-4">
-                <div className="column is-one-third">
-                    <a className="is-block has-text-centered ">
-                        <figure className="image is-1by1 mi-img mx-auto">
-                            <img
-                                src={KSV6}
-                                alt="SpielPlan"
-                                onClick={() => cambiarPagina("/spielplan")}
-                                className="is-rounded mi-img"
-                            />
-                        </figure>
-                        <div className='mt-4'>
-                            <Link to="/spielplan" className="subtitle has-text-white">SpielPlan</Link>
-                        </div>
-                    </a>
-                </div>
-                <div className="column is-one-third">
-                    <a className="is-block has-text-centered">
-                        <figure className="image is-1by1 mi-img mx-auto">
-                            <img
-                                src={KSV8}
-                                alt="Mannschaft"
-                                onClick={() => cambiarPagina("/mannschaft")}
-                                className="is-rounded mi-img "
-
-                            />
-                        </figure>
-                        <div className='mt-4'>
-                            <Link to="/mannschaft" className="subtitle has-text-white">Mannschaft</Link>
-                        </div>
-                    </a>
-                </div>
-                <div className="column is-one-third">
-                    <a className="is-block has-text-centered">
-                        <figure className="image is-1by1 mi-img mx-auto">
-                            <img
-                                src={KSV7}
-                                alt="Nächste Spiele"
-                                onClick={() => cambiarPagina("/historie")}
-                                className="is-rounded mi-img"
-                            />
-                        </figure>
-                        <div className='mt-4'>
-                            <Link to="/historie" className=" subtitle has-text-white">Historie</Link>
-                        </div>
-                    </a>
-                </div>
-            </div>
-
-
-
-            <div className="column has-text-centered " style={{ padding: "80px" }}>
-                <div className="content">
-                    <h3 className="title is-3  has-text-white" >Folge uns</h3>
-                    <div className="buttons is-centered">
-                        <a href="https://www.facebook.com/KSVAmtshainersdorf/?locale=de_DE" target="_blank" rel="noopener noreferrer">
-                            <figure className="image mx-auto efecto">
-                                <img src={Facebok} />
+                <div className="columns is-centered mt-4">
+                    <div className="column is-one-third">
+                        <a className="is-block has-text-centered ">
+                            <figure className="image is-1by1 mi-img mx-auto">
+                                <img
+                                    src={KSV6}
+                                    alt="SpielPlan"
+                                    onClick={() => cambiarPagina("/spielplan")}
+                                    className="is-rounded mi-img"
+                                />
                             </figure>
+                            <div className='mt-4'>
+                                <Link to="/spielplan" className="subtitle has-text-white">SpielPlan</Link>
+                            </div>
                         </a>
-                        <a href=" https://www.instagram.com/ksv_amtshainersdorf/" target="_blank" rel="noopener noreferrer">
-                            <figure className="image mx-auto efecto">
-                                <img src={Instagram} />
+                    </div>
+                    <div className="column is-one-third">
+                        <a className="is-block has-text-centered">
+                            <figure className="image is-1by1 mi-img mx-auto">
+                                <img
+                                    src={KSV8}
+                                    alt="Mannschaft"
+                                    onClick={() => cambiarPagina("/mannschaft")}
+                                    className="is-rounded mi-img "
+
+                                />
                             </figure>
+                            <div className='mt-4'>
+                                <Link to="/mannschaft" className="subtitle has-text-white">Mannschaft</Link>
+                            </div>
+                        </a>
+                    </div>
+                    <div className="column is-one-third">
+                        <a className="is-block has-text-centered">
+                            <figure className="image is-1by1 mi-img mx-auto">
+                                <img
+                                    src={KSV7}
+                                    alt="Nächste Spiele"
+                                    onClick={() => cambiarPagina("/historie")}
+                                    className="is-rounded mi-img"
+                                />
+                            </figure>
+                            <div className='mt-4'>
+                                <Link to="/historie" className=" subtitle has-text-white">Historie</Link>
+                            </div>
                         </a>
                     </div>
                 </div>
-            </div>
-        </section >
+
+
+
+                <div className="column has-text-centered " style={{ padding: "80px" }}>
+                    <div className="content">
+                        <h3 className="title is-3  has-text-white" >Folge uns</h3>
+                        <div className="buttons is-centered">
+                            <a href="https://www.facebook.com/KSVAmtshainersdorf/?locale=de_DE" target="_blank" rel="noopener noreferrer">
+                                <figure className="image mx-auto efecto">
+                                    <img src={Facebok} />
+                                </figure>
+                            </a>
+                            <a href=" https://www.instagram.com/ksv_amtshainersdorf/" target="_blank" rel="noopener noreferrer">
+                                <figure className="image mx-auto efecto">
+                                    <img src={Instagram} />
+                                </figure>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section >
+        </motion.div>
 
     );
 };

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import '../styles/App.css';
 
+
 export const NavBar = () => {
     const [isActive, setIsActive] = useState(false);
     const location = useLocation();
@@ -21,6 +22,7 @@ export const NavBar = () => {
 
     return (
         <>
+
             {/* Background image section */}
             <div className="background">
                 <section className="hero is-medium">
@@ -30,7 +32,7 @@ export const NavBar = () => {
 
             {/* Navbar below the image */}
             <div className='navbar-sticky'>
-                <div className='has-background-black-bis center-navbar'>
+                <div className='center-navbar'>
                     <div className={`navbar-container ${isActive ? "active-background" : ""}`}>
                         <nav className="navbar has-background-black-bis">
                             <div className="container">
@@ -56,8 +58,7 @@ export const NavBar = () => {
                                         <Link to="/sponsoren" className={`navbar-item ${isPath("/sponsoren") ? "is-active" : ""}`}
                                             onClick={closeNavbar}>Sponsoren</Link>
                                         <Link to="/mitgliedwerden" className={`navbar-item ${isPath("/mitgliedwerden") ? "is-active" : ""}`} onClick={closeNavbar}>Mitglied werden</Link>
-                                        <Link to="/vermietung" className={`navbar-item ${isPath("/vermietung") ? "is-active" : ""}`}
-                                            onClick={closeNavbar}>Vermietung</Link>
+
                                         <Link to="/kontakt" className={`navbar-item ${isPath("/kontakt") ? "is-active" : ""}`}
                                             onClick={closeNavbar}>Kontakt</Link>
 

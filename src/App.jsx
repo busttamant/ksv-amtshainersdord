@@ -8,7 +8,6 @@ import { SpielPlan } from './pages/SpielPlan';
 import { Sponsoren } from './pages/Sponsoren';
 import { MitgliedWerden } from './pages/MitgliedWerden';
 import { Kontakt } from './pages/Kontakt';
-import { Vermietung } from './pages/Vermietung';
 import { Historie } from './pages/Historie';
 
 function App() {
@@ -23,7 +22,6 @@ function App() {
         <Route path='/sponsoren' element={<Sponsoren />} />
         <Route path='/mitgliedwerden' element={<MitgliedWerden />} />
         <Route path='/kontakt' element={<Kontakt />} />
-        <Route path='/vermietung' element={<Vermietung />} />
         <Route path='/historie' element={<Historie />} />
 
       </Routes >
