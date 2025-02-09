@@ -27,7 +27,6 @@ export const Mannschaft = () => {
             { name: 'Deniz Van Gablenz', position: 'Zentrales Mittelfeld', number: 7 },
         ],
         sturmer: [
-            { name: 'Fin Witt', position: 'Stürmer', number: 27 },
             { name: 'Marlon Lange', position: 'Stürmer', number: 30 },
             { name: 'Valentin Voigt', position: 'Stürmer', number: 13 },
             { name: 'Leon Hauswald', position: 'Stürmer', number: 12 },
