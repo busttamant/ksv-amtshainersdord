@@ -52,9 +52,9 @@ export const Footer = () => {
                         <div className="content">
                             <h3 className="title is-4 has-text-white">Kontakt</h3>
                             <ul className="has-text-grey">
-                                <p>Email-Adresse</p>
-                                <p>Kultur-Sportverein Amtshainersdorf</p>
                                 <a href='mailto:amtshainerksv@gmail.com'  >amtshainerksv@gmail.com</a>
+                                <p>Kultur-Sportverein Amtshainersdorf</p>
+
                             </ul>
                         </div>
                     </div>

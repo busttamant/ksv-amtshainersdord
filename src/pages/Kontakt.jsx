@@ -19,7 +19,7 @@ export const Kontakt = () => {
             .then(
                 () => {
                     console.log('SUCCESS!');
-                    alert("Vielen Dank");
+                    alert("Vielen Dank, wir melden uns bald beid dir!");
                     form.current.reset(); // Limpia el formulario después de enviar
                 },
                 (error) => {
