@@ -14,7 +14,6 @@ export const Mannschaft = () => {
             { name: 'Jhonny Vargas', position: 'Verteidiger', number: 5 },
             { name: 'Max Kraft', position: 'Verteidiger', number: 18 },
             { name: 'Robert Einert', position: 'Verteidiger', number: 2 },
-            { name: 'Eric Frenzel', position: 'Verteidiger', number: 3 },
         ],
         mittelfeld: [
             { name: 'Stefan Schwanitz', position: 'Zentrales Mittelfeld', number: 8 },
