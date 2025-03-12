@@ -39,7 +39,7 @@ export const SpielPlan = () => {
     const torneos = [
         { fecha: "01.02.2025", hora: "19:00", ort: "Neustadt", resultado: "3. Platz" },
         { fecha: "01.03.2025", hora: "14:00", ort: "Hinterhermsdorf", resultado: "5. Platz" },
-        { fecha: "16.08.2025", hora: "10:00", ort: "Rugiswald", resultado: "" },
+        { fecha: "16.08.2025", hora: "10:00", ort: "Rugiswalde", resultado: "" },
         { fecha: "30.08.2025", hora: "09:30", ort: "Hinterhermsdorf", resultado: "" }
 
     ]
