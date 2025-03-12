@@ -32,14 +32,15 @@ export const SpielPlan = () => {
         { fecha: "05.09.2025", hora: "18:00", localVisitante: "Auswärts", oponente: "FV Rugiswalde", resultado: "" },
         { fecha: "12.09.2025", hora: "18:30", localVisitante: "Auswärts", oponente: "Chemie Dohna", resultado: "" },
         { fecha: "26.09.2025", hora: "18:30", localVisitante: "Auswärts", oponente: "SV Ottendorf", resultado: "" },
-        { fecha: "10.10.2025", hora: "19:30", localVisitante: "Auswärts", oponente: "SV Moritzburg", resultado: "" }
+        { fecha: "10.10.2025", hora: "19:30", localVisitante: "Auswärts", oponente: "SV Moritzburg", resultado: "" },
+        { fecha: "24.10.2025", hora: "18:30", localVisitante: "Auswärts", oponente: "BSV Sebnitz Ü32", resultado: "" }
     ];
 
     const torneos = [
-        { fecha: "01.02.2025", hora: "19:00", localVisitante: "Neustadt", resultado: "" },
-        { fecha: "01.03.2025", hora: "14:00", localVisitante: "Hinterhermsdorf", resultado: "" },
-        { fecha: "16.08.2025", hora: "10:00", localVisitante: "Rugiswald", resultado: "" },
-        { fecha: "30.08.2025", hora: "09:30", localVisitante: "Hinterhermsdorf", resultado: "" }
+        { fecha: "01.02.2025", hora: "19:00", ort: "Neustadt", resultado: "3. Platz" },
+        { fecha: "01.03.2025", hora: "14:00", ort: "Hinterhermsdorf", resultado: "5. Platz" },
+        { fecha: "16.08.2025", hora: "10:00", ort: "Rugiswald", resultado: "" },
+        { fecha: "30.08.2025", hora: "09:30", ort: "Hinterhermsdorf", resultado: "" }
 
     ]
 
@@ -76,12 +77,13 @@ export const SpielPlan = () => {
                 </table>
                 <h1 className="title has-text-centered has-text-white ">Turniere</h1>
                 <h2 className='subtitle has-text-centered has-text-white'> 2025 </h2>
-                <table className="table is-fullwidth  ">
+                <table className="table is-fullwidth has-background-black-bis  ">
                     <thead >
                         <tr>
                             <th className='has-text-white'>Datum</th>
                             <th className='has-text-white'>Zeit</th>
                             <th className='has-text-white'>Ort</th>
+                            <th className='has-text-white'>Ergebnis</th>
 
                         </tr>
                     </thead>
@@ -90,8 +92,7 @@ export const SpielPlan = () => {
                             <tr key={index}>
                                 <td className='has-text-grey'>{partido.fecha}</td>
                                 <td className='has-text-grey'>{partido.hora}</td>
-                                <td className='has-text-grey'>{partido.localVisitante}</td>
-                                <td className='has-text-grey'>{partido.oponente}</td>
+                                <td className='has-text-grey'>{partido.ort}</td>
                                 <td className='has-text-grey'>{partido.resultado}</td>
                             </tr>
                         ))}
