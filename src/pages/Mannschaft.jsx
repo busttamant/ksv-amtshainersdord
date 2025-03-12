@@ -27,7 +27,6 @@ export const Mannschaft = () => {
             { name: 'Xilon Schmidt', position: 'Zentrales Mittelfeld', number: 81 },
             { name: 'Arik May', position: 'Zentrales Mittelfeld', number: 14 },
             { name: 'Marvin Lux', position: 'Offensives Mittelfeld ', number: 19 },
-
             { name: 'Leon Schönfelder', position: 'Zentrales Mittelfeld', number: 9 },
             { name: 'Toni Hoffmann', position: 'Zentrales Mittelfeld', number: 10 },
             { name: 'Deniz Van Gablenz', position: 'Zentrales Mittelfeld', number: 7 },
