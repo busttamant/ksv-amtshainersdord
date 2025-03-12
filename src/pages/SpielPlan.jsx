@@ -20,7 +20,7 @@ export const SpielPlan = () => {
     ];
 
     const partidos2025 = [
-        { fecha: "19.04.2025", hora: "15:00", localVisitante: "Auswärts", oponente: "SV Königstein", resultado: "" },
+        { fecha: "19.04.2025", hora: "12:30", localVisitante: "Auswärts", oponente: "SV Königstein", resultado: "" },
         { fecha: "02.05.2025", hora: "18:30", localVisitante: "Auswärts", oponente: "SV Hinterhermsdorf", resultado: "" },
         { fecha: "23.05.2025", hora: "18:30", localVisitante: "Heim", oponente: "SV Ottendorf", resultado: "" },
         { fecha: "06.06.2025", hora: "18:30", localVisitante: "Heim", oponente: "Chemie Dohna", resultado: "" },
