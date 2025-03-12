@@ -17,13 +17,14 @@ export const Mannschaft = () => {
             { name: 'Max Kraft', position: 'Verteidiger', number: 18 },
             { name: 'Robert Einert', position: 'Verteidiger', number: 2 },
             { name: 'Max Grohmann', position: 'Verteidiger', number: 4 },
+            { name: 'Lucian Schönfelder', position: 'Verteidiger', number: 48 }
 
         ],
         mittelfeld: [
             { name: 'Stefan Schwanitz', position: 'Zentrales Mittelfeld', number: 8 },
             { name: 'Ezra Karabacak', position: 'Offensives Mittelfeld ', number: 15 },
             { name: 'Jonas Schwarzelt', position: 'Zentrales Mittelfeld', number: 4 },
-            { name: 'Robert Durmis', position: 'Zentrales Mittelfeld', number: 81 },
+            { name: 'Xilon Schmidt', position: 'Zentrales Mittelfeld', number: 81 },
             { name: 'Arik May', position: 'Zentrales Mittelfeld', number: 14 },
             { name: 'Marvin Lux', position: 'Offensives Mittelfeld ', number: 19 },
 
@@ -32,9 +33,10 @@ export const Mannschaft = () => {
             { name: 'Deniz Van Gablenz', position: 'Zentrales Mittelfeld', number: 7 },
         ],
         sturmer: [
-            { name: 'Marlon Lange', position: 'Stürmer', number: 30 },
             { name: 'Valentin Voigt', position: 'Stürmer', number: 13 },
             { name: 'Leon Hauswald', position: 'Stürmer', number: 12 },
+            { name: 'Paul Schirman ', position: 'Stürmer', number: 19 },
+            { name: 'Marlon Lange', position: 'Stürmer', number: 30 },
             { name: 'Domenik Neumann', position: 'Stürmer', number: 38 },
         ],
     };
