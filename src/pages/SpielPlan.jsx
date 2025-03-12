@@ -20,7 +20,7 @@ export const SpielPlan = () => {
     ];
 
     const partidos2025 = [
-        { fecha: "19.04.2025", hora: "12:30", localVisitante: "Auswärts", oponente: "SV Königstein", resultado: "" },
+        { fecha: "19.04.2025", hora: "12:0", localVisitante: "Auswärts", oponente: "SV Königstein", resultado: "" },
         { fecha: "02.05.2025", hora: "18:30", localVisitante: "Auswärts", oponente: "SV Hinterhermsdorf", resultado: "" },
         { fecha: "23.05.2025", hora: "18:30", localVisitante: "Heim", oponente: "SV Ottendorf", resultado: "" },
         { fecha: "06.06.2025", hora: "18:30", localVisitante: "Heim", oponente: "Chemie Dohna", resultado: "" },
@@ -37,10 +37,10 @@ export const SpielPlan = () => {
     ];
 
     const torneos = [
-        { fecha: "01.02.2025", hora: "19:00", ort: "Neustadt", resultado: "3. Platz" },
-        { fecha: "01.03.2025", hora: "14:00", ort: "Hinterhermsdorf", resultado: "5. Platz" },
-        { fecha: "16.08.2025", hora: "10:00", ort: "Rugiswalde", resultado: "" },
-        { fecha: "30.08.2025", hora: "09:30", ort: "Hinterhermsdorf", resultado: "" }
+        { fecha: "01.02.2025", hora: "19:00", lugar: "Neustadt", resultado: "3. Platz" },
+        { fecha: "01.03.2025", hora: "14:00", lugar: "Hinterhermsdorf", resultado: "5. Platz" },
+        { fecha: "16.08.2025", hora: "10:00", lugar: "Rugiswalde", resultado: "" },
+        { fecha: "30.08.2025", hora: "09:30", lugar: "Hinterhermsdorf", resultado: "" }
 
     ]
 
@@ -92,7 +92,7 @@ export const SpielPlan = () => {
                             <tr key={index}>
                                 <td className='has-text-grey'>{partido.fecha}</td>
                                 <td className='has-text-grey'>{partido.hora}</td>
-                                <td className='has-text-grey'>{partido.ort}</td>
+                                <td className='has-text-grey'>{partido.lugar}</td>
                                 <td className='has-text-grey'>{partido.resultado}</td>
                             </tr>
                         ))}
