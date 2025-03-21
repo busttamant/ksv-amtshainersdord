@@ -30,11 +30,14 @@ export const NavBar = () => {
                 </section>
             </div>
 
+
+            {/* navbar improve */}
+
             {/* Navbar below the image */}
-            <div className='navbar-sticky'>
+            <div className='navbar-sticky '>
                 <div className='center-navbar'>
                     <div className={`navbar-container ${isActive ? "active-background" : ""}`}>
-                        <nav className="navbar has-background-black-bis">
+                        <nav className="navbar has-background-black-bis is-rounded">
                             <div className="container">
                                 <div className="navbar-brand">
                                     <span
